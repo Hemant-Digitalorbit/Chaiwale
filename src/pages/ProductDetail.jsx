@@ -23,7 +23,7 @@ function ProductDetail() {
     setActiveSection((prev) => (prev === index ? null : index));
   };
 
-  const product = products.find((prod) => prod.name.toLocaleLowerCase() ===  productId.toLocaleLowerCase());
+  const product = products.find((prod) => prod.id ===  Number(productId));
   
   const handleChangeQuantity = (change) => {
     setQuantity((prev) => {

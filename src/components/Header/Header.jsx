@@ -53,9 +53,9 @@ function Header() {
                     <nav className='flex items-center justify-between gap-10 text-[#6F5B35] font-baskervville font-[400] text-[16px]'>
                         <NavLink to={'/'}>Home</NavLink>
                         <NavLink to={'/products'}>Shop</NavLink>
-                        <NavLink to={'/about'}>About</NavLink>
+                        <NavLink to={'/'}>About</NavLink>
                         <NavLink to={'/blogrecipe'}>Blog & Recipes</NavLink>
-                        <NavLink to={'/contact'}>Contact</NavLink>
+                        <NavLink to={'/'}>Contact</NavLink>
                     </nav>
                 </div>
                 <div className='hidden md:block'>

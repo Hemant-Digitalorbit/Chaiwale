@@ -5,7 +5,7 @@ export const TrackCard = ({product}) => {
     return (
         <div className='flex items-center justify-between gap-10'>
             <div className='flex flex-col gap-1 lg:w-[240px] md:w-[220px] w-[140px] transition-transform duration-300 ease-in'>
-                <Link to={`/${product.name}`}>
+                <Link to={`/${product.id}`}>
                     <div className='lg:w-[240px] lg:h-[280px] md:w-[220px] md:h-[250px] w-[140px] h-[168px]'>
                         <img className='w-full h-full object-cover' src={product.image[0]} alt='product image' />
                     </div>

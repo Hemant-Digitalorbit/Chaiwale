@@ -7,7 +7,7 @@ export const WishListCard = ({product}) => {
     return (
         <div className='flex items-center justify-between gap-10'>
             <div className='flex flex-col gap-1 lg:w-[280px] md:w-[230px] w-[140px] transition-transform duration-300 ease-in'>
-                <Link to={`/${product.name}`}>
+                <Link to={`/${product.id}`}>
                     <div className='lg:w-[285px] lg:h-[340px] md:w-[230px] md:h-[250px] w-[140px] h-[168px]'>
                         <img className='w-full h-full object-cover' src={product.image[0]} alt='product image' />
                     </div>
