@@ -9,12 +9,9 @@ jobs:
     steps:
       # Step 1: Checkout the code
       - uses: actions/checkout@v4
-
-
       # Step 2: Install dependencies and build
-      - run: npm ci && npm run build
-
-
+      - run: |
+          CI=false npm ci && npm run build
       # Step 3: Deploy to Firebase Production (live) channel
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
