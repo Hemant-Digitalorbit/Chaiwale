@@ -20,4 +20,3 @@ jobs:
           channelId: live  # Deploy to the live channel (Production)
           projectId: chai-waley
 
-
